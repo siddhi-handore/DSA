@@ -11,13 +11,13 @@ def rotate(arr, d):
     if d == 0:
         return arr
     d = d % n
-    reverse(0, d-1, arr)
-    reverse(d, n-1, arr)
+    reverse(0, n-d-1, arr)
+    reverse(n-d, n-1, arr)
     reverse(0, n-1, arr)
     return arr
 
 
 if __name__ == '__main__':
     arr = [1, 2, 3, 4, 5]
-    print(rotate(arr, 8))
+    print(rotate(arr, 2))
 

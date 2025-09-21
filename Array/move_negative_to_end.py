@@ -1,20 +1,20 @@
 # Method 1: Bruteforce Solution
 # TC: O(N) ,SC: O(N)
-# def moveNeg(arr):
-#     pos = []
-#     neg = []
-#     for i in arr:
-#         if i < 0:
-#             neg.append(i)
-#         else:
-#             pos.append(i)
-#     for i in range(len(pos)):
-#         arr[i] = pos[i]
-#     n = len(pos)
-#     for i in range(len(neg)):
-#         arr[n] = neg[i]
-#         n+=1
-#     return arr
+def moveNeg(arr):
+    pos = []
+    neg = []
+    for i in arr:
+        if i < 0:
+            neg.append(i)
+        else:
+            pos.append(i)
+    for i in range(len(pos)):
+        arr[i] = pos[i]
+    n = len(pos)
+    for i in range(len(neg)):
+        arr[n] = neg[i]
+        n+=1
+    return arr
 
 #Method 2: Better solution
 # TC: O(n**2) SC:O(1)
