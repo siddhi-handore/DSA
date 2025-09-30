@@ -21,7 +21,7 @@ def quickSort(arr, low, high):
 
 
 if __name__ == '__main__':
-    arr = [4, 6, 2, 5, 7, 9, 1, 3]
+    arr = [9, 15, 12, 7, 3, 1, 2, 4]
     print(arr)
     n = len(arr)
     quickSort(arr, 0, n-1)
