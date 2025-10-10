@@ -9,7 +9,7 @@ def square(n):
             low = mid + 1
         else:
             high = mid - 1
-    return ans
+    return high
 
 if __name__ == '__main__':
     n = 24
