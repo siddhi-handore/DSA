@@ -1,4 +1,4 @@
-def single(arr, n):
+def singleElement(arr, n):
     if n == 1:
         return arr[0]
     if arr[0] != arr[1]:
@@ -20,4 +20,4 @@ def single(arr, n):
 
 if __name__ == '__main__':
     arr = [2, 2, 8, 7, 7, 15, 15, 20, 20]
-    print(single(arr, len(arr)))
+    print(singleElement(arr, len(arr)))
